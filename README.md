@@ -1,6 +1,6 @@
 # Custom Flash Attention with OpenAI Triton
 
-This repository contains a high-performance implementation of the Flash Attention mechanism using OpenAI Triton.
+This repository contains a high-performance implementation of the Flash Attention mechanism using OpenAI Triton. You can access the collab notebook here : https://colab.research.google.com/drive/1N2HfsMf-uU1eFYdUKUCuuGnlhEXlvO9y?usp=sharing
 
 The project demonstrates how to implement fused GPU kernels in Python that significantly outperform standard PyTorch operations and rival optimized CUDA implementations (cuDNN/FlashAttention).
 
@@ -29,6 +29,7 @@ Benchmarks were conducted on an NVIDIA GPU using float16 precision. We compared 
 ## Benchmark Graph Analysis
 
 ![Benchmark Graph](benchmark_plot.png)
+
 *(Figure: TFLOPS performance (FP16) vs Sequence Length)*
 
 The visual representation above highlights the critical impact of IO-aware tiling on GPU performance:
